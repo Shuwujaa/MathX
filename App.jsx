@@ -2,7 +2,7 @@
 import { useEffect, useState } from "react";
 import Latex from "react-latex-next";
 import "katex/dist/katex.min.css";
-import questions from "./QS/set3.json";
+import questions from "./QS/set1.json";
 import "./App.css";
 
 const QuizQuestion = ({ data, selected, locked, onSelect }) => {
@@ -48,6 +48,10 @@ export default function App() {
   });
   const [selected, setSelected] = useState(null);
   const [locked, setLocked] = useState(false);
+  const [answered, setAnswered] = useState(() => {
+    const saved = localStorage.getItem("answeredQuestions");
+    return saved ? JSON.parse(saved) : {};
+  });
   const [quizCompleted, setQuizCompleted] = useState(false);
 
   const totalQuestions = questions.length;
@@ -58,37 +62,50 @@ export default function App() {
   useEffect(() => {
     localStorage.setItem("quizIndex", index);
     localStorage.setItem("quizScore", score);
-  }, [index, score]);
+    localStorage.setItem("answeredQuestions", JSON.stringify(answered));
+  }, [index, score, answered]);
 
-  // Handle selection
+  // Lock previously answered questions
+  useEffect(() => {
+    if (answered[index]) {
+      setSelected(answered[index]);
+      setLocked(true);
+    } else {
+      setSelected(null);
+      setLocked(false);
+    }
+  }, [index, answered]);
+
   const handleSelect = (option) => {
     if (locked) return;
     setSelected(option);
     setLocked(true);
+
+    // Update score if correct
     if (option === currentQuestion.answer) {
       setScore((prev) => prev + 1);
     }
+
+    // Store answer permanently
+    setAnswered((prev) => {
+      const updated = { ...prev, [index]: option };
+      return updated;
+    });
   };
 
-  // Navigation
   const nextQuestion = () => {
     if (index + 1 < totalQuestions) {
       setIndex((prev) => prev + 1);
-      setSelected(null);
-      setLocked(false);
     } else {
       setQuizCompleted(true);
       localStorage.removeItem("quizIndex");
       localStorage.removeItem("quizScore");
+      localStorage.removeItem("answeredQuestions");
     }
   };
 
   const prevQuestion = () => {
-    if (index > 0) {
-      setIndex((prev) => prev - 1);
-      setSelected(null);
-      setLocked(false);
-    }
+    if (index > 0) setIndex((prev) => prev - 1);
   };
 
   const resetQuiz = () => {
@@ -96,32 +113,33 @@ export default function App() {
     setScore(0);
     setSelected(null);
     setLocked(false);
+    setAnswered({});
     setQuizCompleted(false);
     localStorage.removeItem("quizIndex");
     localStorage.removeItem("quizScore");
+    localStorage.removeItem("answeredQuestions");
   };
 
-  // Keyboard Controls
+  // Keyboard controls
   useEffect(() => {
     const handleKey = (e) => {
       if (quizCompleted) return;
 
-      // Option select via keys 1-4
+      // Option selection 1-4
       if (["1", "2", "3", "4"].includes(e.key)) {
         const idx = parseInt(e.key) - 1;
-        if (currentQuestion.options[idx]) {
-          handleSelect(currentQuestion.options[idx]);
-        }
+        if (currentQuestion.options[idx]) handleSelect(currentQuestion.options[idx]);
       }
 
       // Enter or Right Arrow -> Next
-      if (e.key === "Enter" || e.key === "ArrowRight") {
-        if (locked) nextQuestion();
-      }
+      if ((e.key === "Enter" || e.key === "ArrowRight") && locked) nextQuestion();
 
       // Left Arrow -> Previous
-      if (e.key === "ArrowLeft") {
-        prevQuestion();
+      if (e.key === "ArrowLeft") prevQuestion();
+
+      // NUCLEAR RESET: Key 0 -> reset everything
+      if (e.key === "0") {
+        resetQuiz();
       }
     };
 
@@ -152,13 +170,10 @@ export default function App() {
           />
 
           <div className="controls">
-          
             <button className="next-btn" onClick={nextQuestion} disabled={!locked}>
               {index + 1 === totalQuestions ? "Finish Quiz" : "Next"}
             </button>
           </div>
-
-      
         </>
       ) : (
         <div className="results">
@@ -174,3 +189,4 @@ export default function App() {
     </div>
   );
 }
+  
