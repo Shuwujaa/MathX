@@ -1,41 +1,40 @@
-// App.jsx
 import { useEffect, useState } from "react";
 import Latex from "react-latex-next";
 import "katex/dist/katex.min.css";
-import questions from "./QS/set1.json";
+import questions from "./QS/set5.trg.json";
 import "./App.css";
 
-const QuizQuestion = ({ data, selected, locked, onSelect }) => {
-  return (
-    <div className="question-card">
-      <h2 className="question-text">
-        <Latex>{data.question}</Latex>
-      </h2>
-      <div className="options">
-        {data.options.map((opt, i) => {
-          const isCorrect = opt === data.answer;
-          const isSelected = opt === selected;
-          let className = "option-btn";
-          if (locked) {
-            if (isCorrect) className += " correct";
-            else if (isSelected) className += " wrong";
-          } else if (isSelected) className += " selected";
+  const QuizQuestion = ({ data, selected, locked, onSelect }) => {
+    return (
+      <div className="question-card">
+        <h2 className="question-text">
+          <Latex>{data.question}</Latex>
+        </h2>
+        <div className="options">
+          {data.options.map((opt, i) => {
+            const isCorrect = opt === data.answer;
+            const isSelected = opt === selected;
+            let className = "option-btn";
+            if (locked) {
+              if (isCorrect) className += " correct";
+              else if (isSelected) className += " wrong";
+            } else if (isSelected) className += " selected";
 
-          return (
-            <button
-              key={i}
-              className={className}
-              onClick={() => !locked && onSelect(opt)}
-              disabled={locked}
-            >
-              <Latex>{opt}</Latex>
-            </button>
-          );
-        })}
+            return (
+              <button
+                key={i}
+                className={className}
+                onClick={() => !locked && onSelect(opt)}
+                disabled={locked}
+              >
+                <Latex>{opt}</Latex>
+              </button>
+            );
+          })}
+        </div>
       </div>
-    </div>
-  );
-};
+    );
+  };
 
 export default function App() {
   const [index, setIndex] = useState(() => {
@@ -58,14 +57,12 @@ export default function App() {
   const currentQuestion = questions[index];
   const progress = ((index + 1) / totalQuestions) * 100;
 
-  // Save progress
   useEffect(() => {
     localStorage.setItem("quizIndex", index);
     localStorage.setItem("quizScore", score);
     localStorage.setItem("answeredQuestions", JSON.stringify(answered));
   }, [index, score, answered]);
 
-  // Lock previously answered questions
   useEffect(() => {
     if (answered[index]) {
       setSelected(answered[index]);
@@ -81,12 +78,10 @@ export default function App() {
     setSelected(option);
     setLocked(true);
 
-    // Update score if correct
     if (option === currentQuestion.answer) {
       setScore((prev) => prev + 1);
     }
 
-    // Store answer permanently
     setAnswered((prev) => {
       const updated = { ...prev, [index]: option };
       return updated;
@@ -120,24 +115,19 @@ export default function App() {
     localStorage.removeItem("answeredQuestions");
   };
 
-  // Keyboard controls
   useEffect(() => {
     const handleKey = (e) => {
       if (quizCompleted) return;
 
-      // Option selection 1-4
       if (["1", "2", "3", "4"].includes(e.key)) {
         const idx = parseInt(e.key) - 1;
         if (currentQuestion.options[idx]) handleSelect(currentQuestion.options[idx]);
       }
 
-      // Enter or Right Arrow -> Next
       if ((e.key === "Enter" || e.key === "ArrowRight") && locked) nextQuestion();
 
-      // Left Arrow -> Previous
       if (e.key === "ArrowLeft") prevQuestion();
 
-      // NUCLEAR RESET: Key 0 -> reset everything
       if (e.key === "0") {
         resetQuiz();
       }
@@ -189,4 +179,3 @@ export default function App() {
     </div>
   );
 }
-  
