@@ -2,7 +2,7 @@ import { useEffect, useState, useRef, useMemo } from "react";
 import Latex from "react-latex-next";
 import "katex/dist/katex.min.css";
 import html2canvas from "html2canvas";
-import questions from "./CompleteKipsCalculus.json";
+import questions from "./SnS.json";
 import "./App.css";
 
 const Icons = {

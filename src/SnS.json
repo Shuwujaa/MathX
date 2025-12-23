@@ -1,0 +1,457 @@
+[
+  {
+    "id": 1,
+    "question": "If $a_4=4$ of an A.P., then find the sum of first $7$-terms of the corresponding arithmetic series:",
+    "options": ["4", "16", "28", "40"],
+    "answer": "28",
+    "reference": "Chapter 6 - Sequences and Series"
+  },
+  {
+    "id": 2,
+    "question": "Which term of the sequence $5, \\frac{7}{2}, 2, \\ldots$ is $-19$?",
+    "options": ["$14^{\\text{th}}$", "$15^{\\text{th}}$", "$18^{\\text{th}}$", "$17^{\\text{th}}$"],
+    "answer": "$17^{\\text{th}}$",
+    "reference": "Chapter 6 - Sequences and Series"
+  },
+  {
+    "id": 3,
+    "question": "For $\\frac{1}{4}, \\frac{2}{5}, \\ldots$, $6^{\\text{th}}$ term is",
+    "options": ["$-\\frac{2}{7}$", "$-2$", "$\\frac{1}{9}$", "$-\\frac{5}{6}$"],
+    "answer": "$-\\frac{5}{6}$",
+    "reference": "Chapter 6 - Sequences and Series"
+  },
+  {
+    "id": 4,
+    "question": "$9^{\\frac{1}{3}} \\cdot 9^{\\frac{1}{9}} \\cdot 9^{\\frac{1}{27}} \\cdot \\ldots, \\infty=$?",
+    "options": ["1", "6", "9", "3"],
+    "answer": "9",
+    "reference": "Chapter 6 - Sequences and Series"
+  },
+  {
+    "id": 5,
+    "question": "A sequence of numbers in which every term after the first is obtained from the preceding term by multiplying it with a constant number is called a geometric sequence or G.P. The constant number is called:",
+    "options": ["Term", "common difference", "Common ratio", "none"],
+    "answer": "Common ratio",
+    "reference": "Chapter 6 - Sequences and Series"
+  },
+  {
+    "id": 6,
+    "question": "G.M between two numbers 4 and $-81$ is",
+    "options": ["324", "$-324$", "$-18$", "none"],
+    "answer": "none",
+    "reference": "Chapter 6 - Sequences and Series"
+  },
+  {
+    "id": 7,
+    "question": "If the first term of an infinite geometric series is equal to twice the sum of all the terms that follows it, then the value of $r$ is:",
+    "options": ["$\\frac{1}{3}$", "$\\frac{1}{2}$", "$\\frac{2}{3}$", "$2$"],
+    "answer": "$\\frac{1}{2}$",
+    "reference": "Chapter 6 - Sequences and Series"
+  },
+  {
+    "id": 8,
+    "question": "Which one is true? ($a>0, b>0$)",
+    "options": ["$G > A > H$", "$A > G > H$", "$H > G > A$", "$H > A > G$"],
+    "answer": "$A > G > H$",
+    "reference": "Chapter 6 - Sequences and Series"
+  },
+  {
+    "id": 9,
+    "question": "The $n^{\\text{th}}$ term of an A.P is $\\ldots$ when $a=-7, d=13$",
+    "options": ["$20-5n$", "$13n-20$", "$13n-7$", "$7-13n$"],
+    "answer": "$13n-20$",
+    "reference": "Chapter 6 - Sequences and Series"
+  },
+  {
+    "id": 10,
+    "question": "H.M. between $3+\\sqrt{27}$ and $3-3\\sqrt{3}$ is",
+    "options": ["-6", "$\\sqrt{45}$", "$\\frac{\\sqrt{27}}{3}$", "$\\frac{-4}{\\sqrt{27}}$"],
+    "answer": "-6",
+    "reference": "Chapter 6 - Sequences and Series"
+  },
+  {
+    "id": 11,
+    "question": "$x+x^2+x^3+\\ldots+x^n = ?$",
+    "options": ["$\\frac{x(x-1)}{x+1}$", "$\\frac{x^n-1}{x-1}$", "$\\frac{x(x^n-1)}{x-1}$", "$\\frac{x^{n+1}}{x-1}$"],
+    "answer": "$\\frac{x(x^n-1)}{x-1}$",
+    "reference": "Chapter 6 - Sequences and Series"
+  },
+  {
+    "id": 12,
+    "question": "Which one is true?",
+    "options": ["$A^2 = GH$", "$G^2 = AH$", "$H^2 = AG$", "None"],
+    "answer": "$G^2 = AH$",
+    "reference": "Chapter 6 - Sequences and Series"
+  },
+  {
+    "id": 13,
+    "question": "$S_n$ for geometric series if $|r|<1$ is given by",
+    "options": ["$\\frac{n}{2} [2a+(n-1)d]$", "$a r^{n-1}$", "$\\frac{a(r^n-1)}{r-1}$", "$\\frac{a(1-r^n)}{1-r}$"],
+    "answer": "$\\frac{a(1-r^n)}{1-r}$",
+    "reference": "Chapter 6 - Sequences and Series"
+  },
+  {
+    "id": 14,
+    "question": "$a_{27}$ of $7, \\frac{23}{2}, \\frac{32}{2}, \\ldots$ is",
+    "options": ["117", "124", "$\\frac{119}{2}$", "$\\frac{146}{2}$"],
+    "answer": "$\\frac{146}{2}$",
+    "reference": "Chapter 6 - Sequences and Series"
+  },
+  {
+    "id": 15,
+    "question": "For $a+ar+ar^2+\\ldots, S_{\\infty}$ is",
+    "options": ["$a(1-r^2)$", "$a(r^2-1)$", "$\\frac{n}{2} [2a+(n-1)d]$", "$\\frac{a}{1-r}$"],
+    "answer": "$\\frac{a}{1-r}$",
+    "reference": "Chapter 6 - Sequences and Series"
+  },
+  {
+    "id": 16,
+    "question": "Sum of all the terms in the sequence $1, \\frac{5}{6}, \\frac{25}{36}, \\ldots, \\infty$ is",
+    "options": ["6", "$\\frac{1}{3}$", "$\\frac{2}{4}$", "$\\frac{5}{6}$"],
+    "answer": "6",
+    "reference": "Chapter 6 - Sequences and Series"
+  },
+  {
+    "id": 17,
+    "question": "The constant ratio of G.P may be any number not equal to:",
+    "options": ["2", "0", "-1", "none"],
+    "answer": "0",
+    "reference": "Chapter 6 - Sequences and Series"
+  },
+  {
+    "id": 18,
+    "question": "$4^{\\text{th}}$ term of the sequence whose general term is $a_n = \\frac{64}{25}\\left(\\frac{-5}{2}\\right)^{n-1}$ is",
+    "options": ["6120", "-321", "190", "-40"],
+    "answer": "-40",
+    "reference": "Chapter 6 - Sequences and Series"
+  },
+  {
+    "id": 19,
+    "question": "$9^{\\text{th}}$ term of the sequence $\\frac{2}{3}, \\frac{1}{3}, \\frac{1}{6}, \\ldots$ is",
+    "options": ["$\\frac{1}{128}$", "$\\frac{1}{256}$", "$\\frac{1}{384}$", "$\\frac{1}{192}$"],
+    "answer": "$\\frac{1}{384}$",
+    "reference": "Chapter 6 - Sequences and Series"
+  },
+  {
+    "id": 20,
+    "question": "$\\frac{5}{27}=$?",
+    "options": ["$0.\\overline{222}$", "$0.\\overline{102}$", "$0.\\overline{185}$", "$0.\\overline{227}$"],
+    "answer": "$0.\\overline{185}$",
+    "reference": "Chapter 6 - Sequences and Series"
+  },
+  {
+    "id": 21,
+    "question": "For $S_{n}=\\frac{n}{2}\\{2a+(n-1)d\\}$, $d$ is called",
+    "options": ["common ratio", "common difference", "common multiple", "none"],
+    "answer": "common difference",
+    "reference": "Chapter 6 - Sequences and Series"
+  },
+  {
+    "id": 22,
+    "question": "The general term of the sequence $a, ar, ar^2, \\ldots$ is",
+    "options": ["$a+(n-1)d$", "$\\frac{a(1-r^n)}{1-r}$", "$\\frac{n}{2}\\{2a+(n-1)d\\}$", "$ar^{n-1}$"],
+    "answer": "$ar^{n-1}$",
+    "reference": "Chapter 6 - Sequences and Series"
+  },
+  {
+    "id": 23,
+    "question": "Common fraction of $7.755$ is:",
+    "options": ["$\\frac{3139}{95}$", "$\\frac{495}{3839}$", "$\\frac{290}{61}$", "$\\frac{349}{45}$"],
+    "answer": "$\\frac{349}{45}$",
+    "reference": "Chapter 6 - Sequences and Series"
+  },
+  {
+    "id": 24,
+    "question": "Geometric mean between two numbers $a$ and $b$ is given by:",
+    "options": ["$\\frac{a+b}{2}$", "$\\pm\\sqrt{ab}$", "$\\frac{2ab}{a+b}$", "$\\frac{a+b}{2ab}$"],
+    "answer": "$\\pm\\sqrt{ab}$",
+    "reference": "Chapter 6 - Sequences and Series"
+  },
+  {
+    "id": 25,
+    "question": "For an H.P. $\\frac{3}{11}, \\frac{3}{14}, \\frac{3}{20}, \\ldots$, the common difference of the corresponding A.P is",
+    "options": ["$\\frac{1}{4}$", "$\\frac{5}{7}$", "$\\frac{3}{2}$", "$\\frac{3}{20}$"],
+    "answer": "$\\frac{5}{7}$",
+    "reference": "Chapter 6 - Sequences and Series"
+  },
+  {
+    "id": 26,
+    "question": "The first term of a G.P is $-36$ and common ratio is $(\\frac{2}{3})^{n-3}$, then $a_5=$?",
+    "options": ["$\\frac{5}{3}$", "$\\frac{6}{5}$", "$-\\frac{3}{5}$", "$-\\frac{4}{9}$"],
+    "answer": "$-\\frac{4}{9}$",
+    "reference": "Chapter 6 - Sequences and Series"
+  },
+  {
+    "id": 27,
+    "question": "The arithmetic mean between $c$ and $e$ is given by:",
+    "options": ["$\\frac{c+e}{2}$", "$\\frac{c-e}{2}$", "$\\frac{e-c}{2}$", "$c+e$"],
+    "answer": "$\\frac{c+e}{2}$",
+    "reference": "Chapter 6 - Sequences and Series"
+  },
+  {
+    "id": 28,
+    "question": "The general term of a G.P is $a_n = 27 \\left(-\\frac{2}{3}\\right)^{n-3}$, the sequence is:",
+    "options": ["$1, 2, 3, \\ldots$", "$-\\frac{7}{3}, -\\frac{5}{3}, -1, \\ldots$", "$1, \\frac{7}{3}, \\ldots$", "none"],
+    "answer": "none",
+    "reference": "Chapter 6 - Sequences and Series"
+  },
+  {
+    "id": 29,
+    "question": "For $a+(a+d)+(a+2d)+\\ldots+[a+(n-1)d], S_n=$?",
+    "options": ["$a+(n-1)d$", "$\\frac{n}{2}\\{2a+(n-1)d\\}$", "$\\frac{a(1-r^n)}{1-r}$", "$\\frac{a(r^n-1)}{r-1}$"],
+    "answer": "$\\frac{n}{2}\\{2a+(n-1)d\\}$",
+    "reference": "Chapter 6 - Sequences and Series"
+  },
+  {
+    "id": 30,
+    "question": "If A, G and H have usual meanings, then $G > ?$ ($a>0, b>0$)",
+    "options": ["H", "A", "$\\frac{1}{A}$", "$\\frac{1}{G}$"],
+    "answer": "H",
+    "reference": "Chapter 6 - Sequences and Series"
+  },
+  {
+    "id": 31,
+    "question": "If $a, b, c$ are in A.P., then $\\frac{1}{a}, \\frac{1}{b}, \\frac{1}{c}$ are in",
+    "options": ["A.P", "G.P", "H.P", "None"],
+    "answer": "H.P",
+    "reference": "Chapter 6 - Sequences and Series"
+  },
+  {
+    "id": 32,
+    "question": "Formula for the $n^{\\text{th}}$ term of an arithmetic sequence is given by:",
+    "options": ["$a_n=a+d$", "$a_n=a+nd$", "$a_n=a-nd$", "$a_n=a+(n-1)d$"],
+    "answer": "$a_n=a+(n-1)d$",
+    "reference": "Chapter 6 - Sequences and Series"
+  },
+  {
+    "id": 33,
+    "question": "H.M between two numbers '$a$' and '$b$' is given by",
+    "options": ["$\\frac{a+b}{2}$", "$\\frac{ab}{a+b}$", "$\\frac{a+b}{2ab}$", "$\\frac{2ab}{a+b}$"],
+    "answer": "$\\frac{2ab}{a+b}$",
+    "reference": "Chapter 6 - Sequences and Series"
+  },
+  {
+    "id": 34,
+    "question": "$S_n$ of geometric series if $|r|>1$ is",
+    "options": ["$\\frac{n}{2}\\{2a+(n-1)d\\}$", "$\\frac{a(r^n-1)}{r-1}$", "$\\frac{a(1-r^n)}{1-r}$", "none"],
+    "answer": "$\\frac{a(r^n-1)}{r-1}$",
+    "reference": "Chapter 6 - Sequences and Series"
+  },
+  {
+    "id": 35,
+    "question": "A.M. between two numbers $a$ and $b$ is given by:",
+    "options": ["$a+b$", "$a-b$", "$\\frac{a-b}{2}$", "$\\frac{a+b}{2}$"],
+    "answer": "$\\frac{a+b}{2}$",
+    "reference": "Chapter 6 - Sequences and Series"
+  },
+  {
+    "id": 36,
+    "question": "For what value of '$n$' is $\\frac{a^{n+1}+b^{n+1}}{a^{n}+b^{n}}$ the G.M between $a$ and $b$?",
+    "options": ["$\\frac{1}{2}$", "$-\\frac{1}{2}$", "$-1$", "$1$"],
+    "answer": "$1$",
+    "reference": "Chapter 6 - Sequences and Series"
+  },
+  {
+    "id": 37,
+    "question": "Three G.M between $5$ and $0.008$ are",
+    "options": ["$0.2, 0.5, 0.6$", "$0.02, 0.05, 0.06$", "$1, 0.2, 0.04$", "$1, \\frac{2}{3}, \\frac{1}{4}$"],
+    "answer": "$1, 0.2, 0.04$",
+    "reference": "Chapter 6 - Sequences and Series"
+  },
+  {
+    "id": 38,
+    "question": "Two A.M between $\\frac{3}{2}$ and $\\frac{27}{14}$ are",
+    "options": ["$\\frac{1}{7}, \\frac{2}{3}$", "$\\frac{23}{14}, \\frac{25}{14}$", "$\\frac{16}{3}, \\frac{14}{5}$", "$\\frac{19}{14}, \\frac{21}{14}$"],
+    "answer": "$\\frac{23}{14}, \\frac{25}{14}$",
+    "reference": "Chapter 6 - Sequences and Series"
+  },
+  {
+    "id": 39,
+    "question": "$7+77+777+\\ldots$ to $n$-terms",
+    "options": ["$\\frac{7}{9}[\\frac{10}{9}(10^n-1)-n]$", "$\\frac{7}{9}[\\frac{10}{9}(10^n-1)-n]$", "$\\frac{1}{9}[\\frac{10}{9}(10^n-1)-n]$", "$\\frac{2}{7}[\\frac{10}{9}(10^n-1)-n]$"],
+    "answer": "$\\frac{7}{9}[\\frac{10}{9}(10^n-1)-n]$",
+    "reference": "Chapter 6 - Sequences and Series"
+  },
+  {
+    "id": 40,
+    "question": "When $1.\\overline{3}$ is written in the form of vulgar fraction then the difference between the numerator and denominator is",
+    "options": ["153", "152", "53", "52"],
+    "answer": "52",
+    "reference": "Chapter 6 - Sequences and Series"
+  },
+  {
+    "id": 41,
+    "question": "If $y=1+2x+4x^2+8x^3+\\ldots+\\ldots$ then $x=$?",
+    "options": ["$y+1$", "$y-1$", "$\\frac{y-1}{y}$", "$\\frac{y-1}{2y}$"],
+    "answer": "$\\frac{y-1}{2y}$",
+    "reference": "Chapter 6 - Sequences and Series"
+  },
+  {
+    "id": 42,
+    "question": "The H.M and A.M between two numbers are 4 and $\\frac{9}{2}$ respectively. The numbers are",
+    "options": ["$5, 4$", "$7, 2$", "$6, 3$", "$12, -3$"],
+    "answer": "$6, 3$",
+    "reference": "Chapter 6 - Sequences and Series"
+  },
+  {
+    "id": 43,
+    "question": "$2+(2+5)+(2+5+8)+\\ldots$ to $n$-terms is",
+    "options": ["$\\frac{n(n+1)}{2}$", "$\\frac{n(n+1)^2}{2}$", "$\\frac{n^2(n+1)}{2}$", "none"],
+    "answer": "none",
+    "reference": "Chapter 6 - Sequences and Series"
+  },
+  {
+    "id": 44,
+    "question": "A clock strikes twice when its hour hand is at one, four time when it is at 2 and so on. How many times does the clock strike in 12 hours?",
+    "options": ["78", "128", "156", "96"],
+    "answer": "96",
+    "reference": "Chapter 6 - Sequences and Series"
+  },
+  {
+    "id": 45,
+    "question": "$\\sum_{k=1}^{5}(k^2-(k-1)^2)=$?",
+    "options": ["5", "25", "125", "625"],
+    "answer": "5",
+    "reference": "Chapter 6 - Sequences and Series"
+  },
+  {
+    "id": 46,
+    "question": "If $t, 2t+2, \\ldots, 3$ are in G.P. then the fourth term is;",
+    "options": ["27", "-27", "$\\frac{27}{2}$", "$-\\frac{27}{2}$"],
+    "answer": "$\\frac{27}{2}$",
+    "reference": "Chapter 6 - Sequences and Series"
+  },
+  {
+    "id": 47,
+    "question": "$\\frac{1}{2}+\\frac{1}{3}+\\frac{1}{6}+\\ldots$ to $9$-terms",
+    "options": ["$-\\frac{5}{6}$", "$-\\frac{1}{2}$", "1", "$-\\frac{3}{2}$"],
+    "answer": "$-\\frac{3}{2}$",
+    "reference": "Chapter 6 - Sequences and Series"
+  },
+  {
+    "id": 48,
+    "question": "If $2+5+8+11+\\ldots+a_n=60100$ then $n=$?",
+    "options": ["100", "200", "150", "250"],
+    "answer": "250",
+    "reference": "Chapter 6 - Sequences and Series"
+  },
+  {
+    "id": 49,
+    "question": "Which term of the sequence $3, \\sqrt{3}, 1, \\ldots$ is $\\frac{1}{243}$?",
+    "options": ["12", "13", "14", "15"],
+    "answer": "15",
+    "reference": "Chapter 6 - Sequences and Series"
+  },
+  {
+    "id": 50,
+    "question": "$11^3+12^3+13^3+\\ldots+20^3$ is;",
+    "options": ["odd integer divisible by 5", "An even integer", "Multiple of 10", "odd integer"],
+    "answer": "Multiple of 10",
+    "reference": "Chapter 6 - Sequences and Series"
+  },
+  {
+    "id": 51,
+    "question": "The quadratic equation in $x$ such the arithmetic mean of its roots is 4 and its geometric mean is 9, is",
+    "options": ["$x^2-8x+81=0$", "$x^2+8x-81=0$", "$x^2+81x+8=0$", "$x^2+81x-8=0$"],
+    "answer": "$x^2-8x+81=0$",
+    "reference": "Chapter 6 - Sequences and Series"
+  },
+  {
+    "id": 52,
+    "question": "If the $p^{\\text{th}}, q^{\\text{th}}$, and $r^{\\text{th}}$ terms of an A.P are in G.P then the common ratio of the G.P is",
+    "options": ["$\\frac{r-q}{q-p}$", "$\\frac{q-r}{q-p}$", "$\\frac{p-q}{r-p}$", "$\\frac{p-q}{p-r}$"],
+    "answer": "$\\frac{r-q}{q-p}$",
+    "reference": "Chapter 6 - Sequences and Series"
+  },
+  {
+    "id": 53,
+    "question": "If $a, b, c$ form a G.P with common ratio $r$ ($0<r<1$). If $a, 2b, 3c$ form an A.P then $r=$?",
+    "options": ["$\\frac{1}{2}$", "$\\frac{1}{3}$", "$\\frac{1}{5}$", "$\\frac{1}{4}$"],
+    "answer": "$\\frac{1}{5}$",
+    "reference": "Chapter 6 - Sequences and Series"
+  },
+  {
+    "id": 54,
+    "question": "Three numbers form a G.P. If we double the middle number we get an A.P. The common ratio of the G.P is",
+    "options": ["$2\\sqrt{3}$", "$2+\\sqrt{3}$", "$2-\\sqrt{3}$", "none"],
+    "answer": "$2+\\sqrt{3}$",
+    "reference": "Chapter 6 - Sequences and Series"
+  },
+  {
+    "id": 55,
+    "question": "If $p^{\\text{th}}$ term of an A.P is $\\frac{3P-1}{6}$, then the sum of first $n$-terms of the A.P is",
+    "options": ["$\\frac{n(3n+1)}{12}$", "$\\frac{n(n+1)}{2}$", "$\\frac{n(n+3)}{4}$", "$\\frac{3n(n+1)}{4}$"],
+    "answer": "$\\frac{n(3n+1)}{12}$",
+    "reference": "Chapter 6 - Sequences and Series"
+  },
+  {
+    "id": 56,
+    "question": "If $p^{\\text{th}}$ term of an A.P is $q$ and $q^{\\text{th}}$ term is $p$ then $m^{\\text{th}}$ term $= ?$",
+    "options": ["$p+q$", "$p+q+m$", "$p+q-m$", "$p+m-q$"],
+    "answer": "$p+q-m$",
+    "reference": "Chapter 6 - Sequences and Series"
+  },
+  {
+    "id": 57,
+    "question": "The sum of 15 terms of an A.P is 600. Their common difference is 5 then $a_1=$?",
+    "options": ["8", "5", "3", "1"],
+    "answer": "8",
+    "reference": "Chapter 6 - Sequences and Series"
+  },
+  {
+    "id": 58,
+    "question": "The sum of three numbers in A.P is 15 and their product is 80. The largest number is",
+    "options": ["2", "5", "8", "11"],
+    "answer": "8",
+    "reference": "Chapter 6 - Sequences and Series"
+  },
+  {
+    "id": 59,
+    "question": "The sum of integers from 1 to 100 that are divisible by 2 or $5=$?",
+    "options": ["3000", "3020", "3050", "3090"],
+    "answer": "3050",
+    "reference": "Chapter 6 - Sequences and Series"
+  },
+  {
+    "id": 60,
+    "question": "The ratio of sum of first 3 terms of a G.P to the sum of first 6 terms is $125:152$ then $r=$?",
+    "options": ["$\\frac{1}{5}$", "$\\frac{3}{5}$", "$\\frac{1}{3}$", "$\\frac{2}{5}$"],
+    "answer": "$\\frac{3}{5}$",
+    "reference": "Chapter 6 - Sequences and Series"
+  },
+  {
+    "id": 61,
+    "question": "If $0.\\overline{125}=\\frac{p}{q}$ then $p+q=$?",
+    "options": ["125", "$\\frac{125}{999}$", "1124", "9925"],
+    "answer": "1124",
+    "reference": "Chapter 6 - Sequences and Series"
+  },
+  {
+    "id": 62,
+    "question": "The value of $0.4\\overline{23}=$?",
+    "options": ["$\\frac{423}{999}$", "$\\frac{419}{990}$", "$\\frac{416}{999}$", "None of these"],
+    "answer": "$\\frac{419}{990}$",
+    "reference": "Chapter 6 - Sequences and Series"
+  },
+  {
+    "id": 63,
+    "question": "The sum of three numbers in G.P is 19 and their product is 216 then $r=$?",
+    "options": ["1.5", "0.5", "1.25", "2.25"],
+    "answer": "1.5",
+    "reference": "Chapter 6 - Sequences and Series"
+  },
+  {
+    "id": 64,
+    "question": "The sum of first 6-terms of a G.P is 9 times the sum of first 3 terms then $r=$?",
+    "options": ["0", "1", "-1", "2"],
+    "answer": "2",
+    "reference": "Chapter 6 - Sequences and Series"
+  },
+  {
+    "id": 65,
+    "question": "If $a, b, c$ are in H.P then $\\left(\\frac{1}{a}+\\frac{1}{b}-\\frac{1}{c}\\right)\\left(\\frac{1}{b}+\\frac{1}{c}-\\frac{1}{a}\\right)=$?",
+    "options": ["$\\frac{4}{ac}-\\frac{3}{b^2}$", "$\\frac{ac}{4}-\\frac{b^2}{3}$", "$\\frac{acb}{4-c^2}$", "$\\frac{1}{ab}-\\frac{4}{ac}$"],
+    "answer": "$\\frac{4}{ac}-\\frac{3}{b^2}$",
+    "reference": "Chapter 6 - Sequences and Series"
+  }
+]
