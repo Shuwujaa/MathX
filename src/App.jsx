@@ -3,7 +3,7 @@ import Latex from "react-latex-next";
 import "katex/dist/katex.min.css";
 import html2canvas from "html2canvas";
 import questions from "./CompleteKipsCalculus.json";
-import "./E.css";
+import "./App.css";
 
 const Icons = {
   Next: () => (<svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9 18L15 12L9 6" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/></svg>),
